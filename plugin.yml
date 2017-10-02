@@ -1,5 +1,5 @@
 name: BankBalTop
 main: me.dablakbandit.bankbaltop.BankBalTopPlugin
 author: Dablakbandit
-version: 1.0
+version: 1.0a
 depend: [DabCore, Bank, Essentials]
