@@ -2,3 +2,6 @@
 bin/
 .project
 .settings/
+/target/
+src/main/resources/EssentialsX.jar
+/output/

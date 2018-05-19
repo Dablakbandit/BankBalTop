@@ -27,7 +27,7 @@ import com.earth2me.essentials.textreader.TextPager;
 import com.earth2me.essentials.utils.NumberUtil;
 
 import me.dablakbandit.bank.api.BankAPI;
-import me.dablakbandit.dabcore.command.AbstractCommand;
+import me.dablakbandit.core.commands.AbstractCommand;
 import net.ess3.api.IEssentials;
 
 public class BalanceTopCommand extends AbstractCommand{
