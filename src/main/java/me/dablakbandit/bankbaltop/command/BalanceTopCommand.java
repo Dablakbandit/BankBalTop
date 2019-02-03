@@ -2,15 +2,8 @@ package me.dablakbandit.bankbaltop.command;
 
 import java.math.BigDecimal;
 import java.text.DateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.UUID;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.logging.Logger;
 
@@ -121,7 +114,8 @@ public class BalanceTopCommand extends AbstractCommand{
 								}
 								BigDecimal userMoney = user.getMoney();
 								user.updateMoneyCache(userMoney);
-								userMoney = userMoney.add(new BigDecimal(BankAPI.getInstance().getMoney(u.toString())));
+								double add = BankAPI.getInstance().getMoney(u.toString());
+								userMoney = userMoney.add(new BigDecimal(add));
 								totalMoney = totalMoney.add(userMoney);
 								final String name = user.isHidden() ? user.getName() : user.getDisplayName();
 								balances.put(name, userMoney);
